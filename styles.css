@@ -1,0 +1,114 @@
+/* =================================
+   Gaya Dasar (Layout Smartphone & Tablet Portrait)
+   ================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e0e0e0;
+}
+
+/* Mengatur semua blok utama */
+header, nav, section, aside, footer {
+    background-color: #ffffff;
+    border: 1px solid #c0c0c0;
+    margin: 8px;
+    padding: 15px;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column; /* Menyusun nav, section, aside secara vertikal */
+}
+
+/* Mengatur agar semua blok di dalam main memiliki lebar penuh */
+nav, section, aside {
+    width: calc(100% - 16px); /* 100% dikurangi margin kiri & kanan */
+}
+
+ul {
+    list-style-type: none; /* Menghilangkan bullets pada list */
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-direction: column; /* Susun vertikal di mobile */
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+footer .copyright {
+    order: -1; /* Pindahkan copyright ke atas di mobile */
+}
+
+/* ====================================================
+   Media Query untuk Tablet Landscape (Lebar >= 768px)
+   ==================================================== */
+@media (min-width: 768px) {
+    main {
+        flex-direction: row;  /* Menyusun item secara horizontal */
+        flex-wrap: wrap;      /* Izinkan item turun ke baris baru */
+        margin: 0 8px;
+    }
+
+    /* NAV mengambil 25% dan SECTION 75% */
+    nav {
+        width: 25%;
+        margin: 0;
+    }
+    section {
+        width: 75%;
+        margin: 0;
+    }
+
+    /* ASIDE turun ke baris baru dengan lebar penuh */
+    aside {
+        width: 100%;
+        margin: 8px 0 0 0;
+    }
+    
+    footer .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer .copyright {
+        order: 0; /* Kembalikan urutan copyright */
+    }
+}
+
+/* ====================================================
+   Media Query untuk Desktop (Lebar >= 1024px)
+   ==================================================== */
+@media (min-width: 1024px) {
+    main {
+        flex-wrap: nowrap; /* Paksa semua item dalam satu baris */
+    }
+
+    /* NAV 25%, SECTION 50%, ASIDE 25% */
+    nav {
+        width: 25%;
+    }
+    section {
+        width: 50%;
+    }
+    aside {
+        width: 25%;
+        margin: 0; /* Reset margin dari aturan tablet */
+    }
+}
