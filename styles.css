@@ -251,57 +251,6 @@ footer {
         width: 100%; 
     }
     
-    footer {
-    padding: 2.5rem 1rem; /* Sedikit menambah padding vertikal */
-    background-color: #111;
-    color: var(--text-secondary);
-    margin-top: 2rem;
-    /* border-top dihapus */
-}
-
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.footer-social,
-.footer-copyright,
-.footer-info {
-    text-align: center;
-}
-
-.footer-social p {
-    margin: 5px 0;
-    font-size: 0.95em; /* Menyesuaikan ukuran font */
-}
-
-.footer-social i {
-    margin-right: 8px;
-    color: var(--primary-color);
-}
-
-.footer-copyright p {
-    font-size: 0.9em; /* Sedikit lebih kecil agar tidak terlalu dominan */
-}
-
-.footer-info h4 {
-    margin: 0 0 5px 0;
-    font-weight: bold;
-    color: var(--text-light);
-    font-size: 1em; /* Ukuran standar untuk judul */
-}
-
-.footer-info p {
-    margin: 0;
-    font-style: normal; /* Menghapus style italic */
-    font-size: 0.9em;
-}
-
-@media (min-width: 768px) {
     .footer-content { 
         flex-direction: row;
         justify-content: space-between;
@@ -332,5 +281,4 @@ footer {
     aside { 
         width: 25%; 
     }
-}    
-}               
+}
