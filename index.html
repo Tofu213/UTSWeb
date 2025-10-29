@@ -1,27 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Profile | Laurensius Jovito/title>
-    <link rel="stylesheet" href="style.css">
+    <title>Personal Profile | Laurensius Jovito</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="page-container">
         <header>
             <div class="header-content">
-                <h1>JD</h1>
-                <p>Student of Information Systems</p>
+                <img src="lauerensius.jpg" alt="Foto Profil" class="header-profile-pic">
+                <div class="header-text">
+                    <h1> My Profile </h1>
+                    <p>Student of Information Systems, UPJ</p>
+                </div>
             </div>
         </header>
 
-        <div class="main-layout">
+        <main class="main-content">
             <nav>
                 <ul>
-                    <li><a href="#biodata" class="nav-link">Biodata</a></li>
+                    <li><a href="#biodata" class="nav-link active">Biodata</a></li>
                     <li><a href="#pendidikan" class="nav-link">Pendidikan</a></li>
                     <li><a href="#pengalaman" class="nav-link">Pengalaman</a></li>
                     <li><a href="#keahlian" class="nav-link">Keahlian</a></li>
@@ -30,22 +36,151 @@
 
             <section>
                 <article id="biodata" class="page-content">
-                    <h2>Biodata</h2>
-                    <p><strong>Nama:</strong> Laurensius Jovito</p>
-                    <p><strong>NIM:</strong> 2024081008</p>
-                    <p><strong>Tanggal Lahir:</strong> 21 Juli 2005</p>
-                    <p><strong>Tempat Lahir:</strong> Jakarta</p>
-                    <p><strong>Agama:</strong> Kristen</p>
+                    <h2 data-text="Biodata">Biodata</h2>
+                    <div class="biodata-grid">
+                        <p><strong>Nama:</strong></p><p>Laurensius Jovito</p>
+                        <p><strong>NIM:</strong></p><p>2024081008</p>
+                        <p><strong>Tanggal Lahir:</strong></p><p>21 Juli 2005</p>
+                        <p><strong>Tempat Lahir:</strong></p><p>Jakarta</p>
+                        <p><strong>Agama:</strong></p><p>Kristen</p>
+                    </div>
                 </article>
-
                 <article id="pendidikan" class="page-content">
-                    <h2>Riwayat Pendidikan</h2>
-                    <h3>Universitas Pembangunan Jaya (2025 - Sekarang)</h3>
-                    <p>S1 - Sistem Informasi</p>
+                    <h2 data-text="Riwayat Pendidikan">Riwayat Pendidikan</h2>
+                    <div class="timeline-item animate-on-scroll card-3d">
+                        <h3>Universitas Pembangunan Jaya (2025 - Sekarang)</h3>
+                        <p>S1 - Sistem Informasi</p>
+                    </div>
                     <hr>
-                    <h3>Highschooling Kak Seto (2021 - 2024)</h3>
-                    <p>Jurusan IPA</p>
+                    <div class="timeline-item animate-on-scroll card-3d">
+                        <h3>Highschooling Kak Seto (2021 - 2024)</h3>
+                        <p>Jurusan IPA</p>
+                    </div>
+                    <hr>
+                    <div class="timeline-item animate-on-scroll card-3d">
+                        <h3>SMP Negeri 1777 (2018 - 2021)</h3>
+                        <p>Jurusan IPA</p>
+                    </div>
                 </article>
 
                 <article id="pengalaman" class="page-content">
-         </article>
+                    <h2 data-text="Pengalaman Proyek">Pengalaman Proyek</h2>
+                    <div class="project-card animate-on-scroll card-3d">
+                        <h3>Proyek Website Pribadi (2025)</h3>
+                        <p>Merancang dan mengembangkan website profil responsif menggunakan HTML, CSS, dan JavaScript sebagai bagian dari tugas mata kuliah.</p>
+                    </div>
+                </article>
+
+                <article id="keahlian" class="page-content">
+                    <h2 data-text="Keahlian">Keahlian</h2>
+                    <ul class="skills-list">
+                        <li class="animate-on-scroll card-3d"><i class="fa-brands fa-html5"></i> HTML5 & CSS3</li>
+                        <li class="animate-on-scroll card-3d"><i class="fa-solid fa-mobile-screen-button"></i> Responsive Web Design</li>
+                        <li class="animate-on-scroll card-3d"><i class="fa-brands fa-js"></i> Dasar-dasar JavaScript DOM</li>
+                        <li class="animate-on-scroll card-3d"><i class="fa-solid fa-file-excel"></i> Microsoft Office Suite</li>
+                    </ul>
+                </article>
+            </section>
+            
+            <aside>
+                <div class="info-card animate-on-scroll card-3d">
+                    <h3>Hobi</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-code"></i> Coding</li>
+                        <li><i class="fa-solid fa-gamepad"></i> Bermain Game</li>
+                        <li><i class="fa-solid fa-film"></i> Menonton Film</li>
+                    </ul>
+                </div>
+            </aside>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>Copyright &copy; 2025 Laurensius Jovito. All Rights Reserved.</p>
+                <div class="footer-social">
+                    <span><i class="fa-brands fa-instagram"></i> jovito.mahaputra</span>
+                    <span><i class="fa-brands fa-whatsapp"></i> +6281937772345</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const pages = document.querySelectorAll('.page-content');
+
+            let typingTimeout;
+            function typewriterEffect(element) {
+                const text = element.dataset.text;
+                element.innerHTML = "";
+                let i = 0;
+                clearTimeout(typingTimeout);
+
+                function type() {
+                    if (i < text.length) {
+                        element.innerHTML += text.charAt(i);
+                        i++;
+                        // UBAH NILAI DI SINI UNTUK KECEPATAN KETIK
+                        typingTimeout = setTimeout(type, 40); 
+                    } else {
+                        element.classList.remove('typing');
+                    }
+                }
+                element.classList.add('typing');
+                type();
+            }
+
+            const initialPage = document.querySelector('#biodata');
+            initialPage.classList.add('visible');
+            typewriterEffect(initialPage.querySelector('h2'));
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href');
+                    const targetPage = document.querySelector(targetId);
+                    if (link.classList.contains('active')) return;
+
+                    navLinks.forEach(navLink => navLink.classList.remove('active'));
+                    pages.forEach(page => page.classList.remove('visible'));
+
+                    link.classList.add('active');
+                    targetPage.classList.add('visible');
+                    
+                    const title = targetPage.querySelector('h2');
+                    if (title) {
+                        typewriterEffect(title);
+                    }
+                });
+            });
+
+            const scrollElements = document.querySelectorAll('.animate-on-scroll');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) entry.target.classList.add('is-visible');
+                });
+            }, { threshold: 0.1 });
+            scrollElements.forEach(el => observer.observe(el));
+
+            const cards3D = document.querySelectorAll('.card-3d');
+            cards3D.forEach(card => {
+                card.addEventListener('mousemove', (e) => {
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    const rotateX = (y - centerY) / 20;
+                    const rotateY = (centerX - x) / 20;
+
+                    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+                });
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
