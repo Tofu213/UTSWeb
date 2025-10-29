@@ -186,29 +186,43 @@ footer {
     padding: 2rem 1rem;
     background-color: #111;
     color: var(--text-secondary);
+    margin-top: 2rem;
+    border-top: 2px dotted var(--border-color); 
 }
 
 .footer-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
     max-width: 1400px;
     margin: 0 auto;
 }
 
-.footer-social {
-    display: flex;
-    gap: 1.5rem;
+.footer-social,
+.footer-copyright,
+.footer-info {
+    text-align: center;
 }
 
-.footer-social span {
-    color: var(--text-secondary);
-    text-decoration: none;
+.footer-social p {
+    margin: 5px 0;
 }
 
 .footer-social i {
     margin-right: 8px;
+    color: var(--primary-color);
+}
+
+.footer-info h4 {
+    margin: 0 0 5px 0;
+    font-weight: bold;
+    color: var(--text-light);
+}
+
+.footer-info p {
+    margin: 0;
+    font-style: italic;
 }
 
 .main-content, nav ul { 
@@ -236,10 +250,73 @@ footer {
     aside { 
         width: 100%; 
     }
+    
+    footer {
+    padding: 2.5rem 1rem; /* Sedikit menambah padding vertikal */
+    background-color: #111;
+    color: var(--text-secondary);
+    margin-top: 2rem;
+    /* border-top dihapus */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer-social,
+.footer-copyright,
+.footer-info {
+    text-align: center;
+}
+
+.footer-social p {
+    margin: 5px 0;
+    font-size: 0.95em; /* Menyesuaikan ukuran font */
+}
+
+.footer-social i {
+    margin-right: 8px;
+    color: var(--primary-color);
+}
+
+.footer-copyright p {
+    font-size: 0.9em; /* Sedikit lebih kecil agar tidak terlalu dominan */
+}
+
+.footer-info h4 {
+    margin: 0 0 5px 0;
+    font-weight: bold;
+    color: var(--text-light);
+    font-size: 1em; /* Ukuran standar untuk judul */
+}
+
+.footer-info p {
+    margin: 0;
+    font-style: normal; /* Menghapus style italic */
+    font-size: 0.9em;
+}
+
+@media (min-width: 768px) {
     .footer-content { 
-        flex-direction: row; 
-        justify-content: space-between; 
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
+
+    .footer-social,
+    .footer-copyright,
+    .footer-info {
+        flex: 1;
+    }
+
+    .footer-social { text-align: left; }
+    .footer-copyright { text-align: center; }
+    .footer-info { text-align: right; }
 }
 
 @media (min-width: 1200px) {
@@ -255,4 +332,5 @@ footer {
     aside { 
         width: 25%; 
     }
-}
+}    
+}               
